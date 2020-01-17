@@ -1,0 +1,256 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "createitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "item_name",
+                    "type": "string"
+                },
+                {
+                    "name": "idata",
+                    "type": "string"
+                },
+                {
+                    "name": "mdata",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "createlog",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "item_id",
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "getfrommk",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "card",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "glstat",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "items",
+                    "type": "uint64"
+                },
+                {
+                    "name": "logs",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "item_name",
+                    "type": "string"
+                },
+                {
+                    "name": "idata",
+                    "type": "string"
+                },
+                {
+                    "name": "mdata",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "log",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "item_id",
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "ownitem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "amount",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "sendtomarket",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "item_id",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setupgl",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "user",
+            "base": "",
+            "fields": [
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "ownitems",
+                    "type": "ownitem[]"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "createitem",
+            "type": "createitem",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createlog",
+            "type": "createlog",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "getfrommk",
+            "type": "getfrommk",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "sendtomarket",
+            "type": "sendtomarket",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setupgl",
+            "type": "setupgl",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "glstats",
+            "type": "glstat",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "items",
+            "type": "item",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "logs",
+            "type": "log",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "users",
+            "type": "user",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
