@@ -3,8 +3,8 @@ const Eos = require("eosjs");
 
 mainchain = Eos({
   keyProvider: "", // private key
-  httpEndpoint: "http://jungle2.cryptolions.io:80",
-  chainId: "e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473"
+  httpEndpoint: "",
+  chainId: ""
 });
 
 // Another chain where items to be migrated from
@@ -13,8 +13,8 @@ var ContractAccount = "";
 
 secondary = Eos({
   keyProvider: "", // private key
-  httpEndpoint: "https://api-lynx-testnet.eosarabia.net:443",
-  chainId: "f11d5128e07177823924a07df63bf59fbd07e52c44bc77d16acc1c6e9d22d37b"
+  httpEndpoint: "",
+  chainId: ""
 });
 
 async function check_log() {
